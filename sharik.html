@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сайт про собаку Шаріка</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #fffffffd;
+      color: #000000;
+    }
+    
+    h1 {
+      margin-top: 50px;
+    }
+    
+    #gallery-button, #biography-button, #breed-button, .back-button {
+      background-color: #04db0b;
+      border: none;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    
+    .section {
+      display: none;
+      margin-top: 50px;
+    }
+    
+    #gallery-section:target, #biography-section:target, #breed-section:target {
+      display: block;
+    }
+    
+    .back-button {
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Привіт, я Шарік</h1>
+  
+  <img src="dog.jpg" alt="Основна фотографія Шаріка">
+  
+  <nav>
+    <ul>
+      <li><a href="#gallery-section" id="gallery-button">Галерея</a></li>
+      <li><a href="#biography-section" id="biography-button">Біографія</a></li>
+      <li><a href="#breed-section" id="breed-button">Про породу собаки</a></li>
+    </ul>
+  </nav>
+  
+  <section id="gallery-section" class="section">
+    <h2>Галерея</h2>
+    <!-- Тут можна вставити фотографії -->
+    <img src="photo1.jpg" alt="Фото 1">
+    <img src="photo2.jpg" alt="Фото 2">
+    <img src="photo3.jpg" alt="Фото 3">
+    <a href="#" class="back-button">Повернутися на головну сторінку</a>
+  </section>
+  
+  <section id="biography-section" class="section">
+    <h2>Біографія</h2>
+    <p>Тут можна написати текст з біографією Шаріка.</p>
+    <a href="#" class="back-button">Повернутися на головну сторінку</a>
+  </section>
+  
+  <section id="breed-section" class="section">
+    <h2>Про породу собаки</h2>
+    <p>Тут можна розповісти про породу собаки, до якої належить Шарік.</p>
+    <a href="#" class="back-button">Повернутися на головну сторінку</a>
+  </section>
+</body>
+</html>
